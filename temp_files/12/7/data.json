@@ -1,0 +1,106 @@
+{
+  "data": {
+    "code": "team_info",
+    "columns": [
+      {
+        "column": [
+          {
+            "name": "id",
+            "type": "number",
+            "pk": "y"
+          },
+          {
+            "name": "name",
+            "type": "char",
+            "size": "100"
+          },
+          {
+            "name": "short_name",
+            "type": "char",
+            "size": "15"
+          },
+          {
+            "name": "team_type_id",
+            "type": "number",
+            "fk": "y",
+            "fkname": "team_types"
+          },
+          {
+            "name": "team_type_name",
+            "type": "char",
+            "size": "50"
+          },
+          {
+            "name": "country_id",
+            "type": "number",
+            "fk": "y",
+            "fkname": "countries"
+          },
+          {
+            "name": "country_name",
+            "type": "char",
+            "size": "100"
+          },
+          {
+            "name": "gender_id",
+            "type": "number",
+            "fk": "y",
+            "fkname": "gender"
+          },
+          {
+            "name": "gender_name",
+            "type": "char",
+            "size": "50"
+          },
+          {
+            "name": "base_year",
+            "type": "number"
+          },
+          {
+            "name": "web_site",
+            "type": "char",
+            "size": "250"
+          },
+          {
+            "name": "photo",
+            "type": "char",
+            "size": "80"
+          },
+          {
+            "name": "season_id",
+            "type": "number",
+            "fk": "y",
+            "fkname": "seasons"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          },
+          {
+            "name": "ts",
+            "type": "date"
+          }
+        ]
+      }
+    ],
+    "row": [
+      {
+        "id": "7",
+        "name": "\u041b\u043e\u043a\u043e\u043c\u043e\u0442\u0438\u0432 \u041c\u043e\u0441\u043a\u0432\u0430",
+        "short_name": "\u041b\u043e\u043a\u043e\u043c\u043e\u0442\u0438\u0432",
+        "team_type_id": "1",
+        "team_type_name": "\u041a\u043b\u0443\u0431",
+        "country_id": "170",
+        "country_name": "\u0420\u043e\u0441\u0441\u0438\u044f",
+        "gender_id": "1",
+        "gender_name": "\u041c",
+        "base_year": "1923",
+        "web_site": "http://www.fclm.ru",
+        "photo": "https://instatscout.com/images/teams/180/7.png",
+        "season_id": "28",
+        "index": "241",
+        "ts": "2021-11-20 06:06:03.136"
+      }
+    ]
+  }
+}
