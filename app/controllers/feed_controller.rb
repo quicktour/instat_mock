@@ -1,14 +1,16 @@
 class FeedController < ApplicationController
   def index
-    file_name = "#{params['tpl']}"
+    tpl_path = "#{params['tpl']}"
+    team_path = ''
+    player_path = ''
 
     if params['team_id']
-      file_name += "_#{params['team_id']}"
+      team_path = params['team_id']
     elsif params['player_id']
-      file_name += "_#{params['player_id']}"
+      player_path = params['player_id']
     end
 
-    file_data = File.read(Rails.root.join('temp_files', "#{file_name}.json"))
+    file_data = File.read(Rails.root.join('temp_files', tpl_path, team_path, player_path, 'data.json'))
 
     render json: JSON.parse(file_data)
   rescue
